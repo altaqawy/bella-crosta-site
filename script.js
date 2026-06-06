@@ -263,7 +263,6 @@ function heroMarkup() {
         <div class="hero-actions">
           <a class="primary-link" href="#menu">View Menu</a>
           <a class="secondary-link" href="https://wa.me/${restaurant.whatsapp}" target="_blank" rel="noreferrer">Order on WhatsApp</a>
-          <a class="secondary-link" href="#reserve">Reserve Pickup</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
