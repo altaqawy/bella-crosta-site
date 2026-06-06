@@ -653,12 +653,22 @@ function contactStrip() {
         <p class="eyebrow">Visit</p>
         <h2>Obour, Egypt</h2>
         <p>${restaurant.address}</p>
-        <div class="hero-actions">
-          <a class="primary-link" href="https://wa.me/${restaurant.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
-          <a class="secondary-link" href="tel:${restaurant.phone}">Call</a>
-          <a class="secondary-link" href="${restaurant.maps}" target="_blank" rel="noreferrer">Get directions</a>
-          <a class="secondary-link" href="${restaurant.instagram}" target="_blank" rel="noreferrer">Instagram</a>
-          <a class="secondary-link" href="${restaurant.tiktok}" target="_blank" rel="noreferrer">TikTok</a>
+        <div class="visit-icon-actions" aria-label="Visit actions">
+          <a href="https://wa.me/${restaurant.whatsapp}" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.8 9.8 0 0 0-8.5 14.8L2 22l5.4-1.4A9.9 9.9 0 1 0 12 2m0 2a7.9 7.9 0 0 1 0 15.8 8 8 0 0 1-4-1.1l-.4-.2-2.7.7.7-2.6-.3-.4A7.8 7.8 0 0 1 12 4m-3.1 4.2c-.2 0-.5.1-.7.4s-.9.9-.9 2.2 1 2.6 1.1 2.8c.2.2 1.9 3 4.7 4 .7.2 1.2.4 1.6.4.7.1 1.3.1 1.8-.1.6-.2 1.7-.8 1.9-1.5.2-.7.2-1.3.1-1.5s-.2-.2-.5-.4l-1.8-.9c-.3-.1-.4-.2-.6.2l-.8 1c-.1.2-.3.2-.6.1a6.4 6.4 0 0 1-3.1-2.7c-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.4-.4-.4-.6-.4z" /></svg>
+          </a>
+          <a href="tel:${restaurant.phone}" aria-label="Call">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 9.8 6c.7.7.8 1.8.2 2.6l-1 1.5a13.4 13.4 0 0 0 5 5l1.5-1c.8-.5 1.9-.4 2.6.2l3.2 3.2c.7.7.8 1.9.1 2.7-1 1.2-2.4 1.8-4 1.7C9.1 21.4 2.6 14.9 2.1 6.6 2 5 2.6 3.6 3.8 2.6c.8-.7 2-.6 2.8.2z" /></svg>
+          </a>
+          <a href="${restaurant.maps}" target="_blank" rel="noreferrer" aria-label="Get directions">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" /></svg>
+          </a>
+          <a href="${restaurant.instagram}" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.8A4.2 4.2 0 1 1 12 16.2 4.2 4.2 0 0 1 12 7.8m0 2A2.2 2.2 0 1 0 12 14.2 2.2 2.2 0 0 0 12 9.8M17.7 6.2a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z" /></svg>
+          </a>
+          <a href="${restaurant.tiktok}" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2h3a5.6 5.6 0 0 0 4 4.2V9a8.3 8.3 0 0 1-4-1.1v7.2A6 6 0 1 1 11 9.2V12a3.2 3.2 0 1 0 3 3.2z" /></svg>
+          </a>
         </div>
       </div>
     </section>

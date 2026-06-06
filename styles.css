@@ -865,6 +865,41 @@ h3 {
   background: var(--paper);
 }
 
+.visit-icon-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.7rem;
+}
+
+.visit-icon-actions a {
+  display: inline-grid;
+  place-items: center;
+  width: 3.3rem;
+  height: 3.3rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: var(--paper);
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.visit-icon-actions a:first-child {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.visit-icon-actions a:hover {
+  transform: translateY(-2px);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.visit-icon-actions svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1007,14 +1042,9 @@ h3 {
 
 .mobile-nav {
   position: fixed;
-  left: 50%;
-  right: auto;
-  bottom: 0;
+  inset: auto 0 0;
   z-index: 30;
   display: none;
-  width: 100dvw;
-  max-width: 100dvw;
-  transform: translateX(-50%);
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   border-top: 1px solid var(--line);
@@ -1037,22 +1067,6 @@ h3 {
   font-weight: 900;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.mobile-nav svg {
-  width: 1.55rem;
-  height: 1.55rem;
-  fill: currentColor;
-}
-
-.mobile-nav span {
-  position: absolute;
-  top: 0.5rem;
-  right: calc(50% - 1.35rem);
-  min-width: 1.15rem;
-  height: 1.15rem;
-  margin-left: 0;
-  font-size: 0.68rem;
 }
 
 .mobile-nav .is-active {
